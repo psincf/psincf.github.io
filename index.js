@@ -8,12 +8,11 @@ function add_project(name, img_src, gif_src, description_text, link) {
     const img = document.createElement("img");
     img.setAttribute("class", "img_project");
     img.setAttribute("src", img_src);
+    if (gif_src) {
+        img.setAttribute("src", gif_src);
+    }
     img.setAttribute("width", "400px");
     img.setAttribute("height", "200px");
-    if (gif_src) {
-        img.setAttribute("onmouseover", "(() => {this.src = \"" + gif_src + "\"})()");
-        img.setAttribute("onmouseout", "(() => {this.src = \"" + img_src + "\"})()");
-    }
 
     const description = document.createElement("p");
     description.innerText = description_text;
