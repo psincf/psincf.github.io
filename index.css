@@ -23,11 +23,19 @@ body {
 #project_list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .project {
-    margin: 100px;
-    width: 400px;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    margin: 40px 10px 40px 10px;
+    width: 460px;
+}
+
+.project h2 {
+    text-align: center;
 }
 
 .img_project {
